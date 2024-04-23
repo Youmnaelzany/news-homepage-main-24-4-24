@@ -1,0 +1,121 @@
+---
+import "@/styles/globals.css";
+---
+
+<header class="">
+  <div
+    class="flex justify-between items-center mx-4 mt-7 mb-8 xl:mx-[10.31rem] xl:mt-[5.56rem] xl:mb-[3.44rem]"
+  >
+    <a href="/" class="">
+      <img
+        src="/public/images/logo.svg"
+        alt="logo"
+        class="w-[2.81106rem] xl:w-[4.00575rem]"
+      />
+    </a>
+    <nav class="">
+      <ul class="xl:flex xl:justify-between xl:items-center xl:gap-10 hidden">
+        <li>
+          <a
+            href="#"
+            class="text-[0.9375rem] font-normal leading-relaxed text-[#5e607a] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[0.9375rem] font-normal leading-relaxed text-[#5e607a] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+            >New</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[0.9375rem] font-normal leading-relaxed text-[#5e607a] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+            >Popular</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[0.9375rem] font-normal leading-relaxed text-[#5e607a] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+            >Trending</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-[0.9375rem] font-normal leading-relaxed text-[#5e607a] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+            >Categories</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button type="button" id="menuBtn" class="xl:hidden">
+      <img src="/public/images/icon-menu.svg" alt="" />
+    </button>
+  </div>
+  <!-- Overlay -->
+  <div
+    class="w-[16rem] h-[41.8125rem] bg-[#FFFDFA] px-6 pt-36 relative -top-[5.438rem] -right-[7.438rem] hidden"
+    id="listItems"
+  >
+    <img
+      src="/public/images/icon-menu-close.svg"
+      alt="close-icone"
+      class="absolute right-[1.30rem] top-[1.71rem] cursor-pointer"
+      id="closeBtn"
+    />
+    <ul class="flex flex-col gap-6">
+      <li>
+        <a
+          href="#"
+          class="text-[1.125rem] font-normal leading-6 text-[#00001A] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-[1.125rem] font-normal leading-6 text-[#00001A] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >New</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-[1.125rem] font-normal leading-6 text-[#00001A] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >Popular</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-[1.125rem] font-normal leading-6 text-[#00001A] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >Trending</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-[1.125rem] font-normal leading-6 text-[#00001A] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >Categories</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script is:inline>
+  const menuBtn = document.getElementById("menuBtn");
+  const listItems = document.getElementById("listItems");
+  const closeBtn = document.getElementById("closeBtn");
+  closeBtn.addEventListener("click", () => {
+    listItems.classList.add("hidden");
+  });
+  menuBtn.addEventListener("click", () => {
+    const listItems = document.getElementById("listItems");
+    listItems.classList.remove("hidden");
+  });
+</script>
