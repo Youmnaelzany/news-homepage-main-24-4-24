@@ -6,7 +6,95 @@ import "@/styles/globals.css";
 
 <Layout title="Frontend Mentor | News homepage">
   <Header />
-  <main></main>
+  <main class="mx-4 mb-[4.69rem] xl:mx-[10.31rem] xl:mb-[7.75rem]">
+    <section class="flex flex-col gap-16 xl:flex-row xl:gap-[1.87rem]">
+      <div class="xl:w-[45.625rem]">
+        <picture>
+          <source
+            media="(min-width:768px )"
+            srcset="/public/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="/public/images/image-web-3-mobile.jpg"
+            alt="image-web-3"
+            class=""
+          />
+        </picture>
+        <div
+          class="flex flex-col gap-4 xl:flex-row xl:gap-[1.87rem] mt-6 xl:mt-8"
+        >
+          <h1
+            class="xl:w-[21.875rem] w-[21.4375rem] text-[2.5rem] font-extrabold leading-10 xl:text-[3.5rem] xl:leading-[3.5rem] text-[#00001A]"
+          >
+            The Bright Future of Web 3.0?
+          </h1>
+          <div
+            class="flex flex-col gap-6 xl:w-[21.875rem] xl:gap-[1.81rem] w-[21.4375rem]"
+          >
+            <p
+              class="text-[#5E607A] text-[0.9375rem] font-normal leading-relaxed"
+            >
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              type="button"
+              class="w-[11.5625rem] outline-none h-12 bg-[#F15D51] uppercase text-sm leading-6 font-bold tracking-[0.27344rem] text-[#FFFDFA] hover:bg-[#00001A] transition-colors ease-linear duration-500"
+              >READ MORE</button
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="xl:w-[21.875rem] bg-[#00001A] py-6 pl-[1.31rem] pr-7 xl:px-6 xl:py-8 flex flex-col gap-[2.19rem] xl:gap-[2.12rem]"
+      >
+        <h2
+          class="text-[#E9AA52] text-[2rem] font-bold leading-8 xl:text-[2.5rem] xl:leading-10"
+        >
+          New
+        </h2>
+        <div class="flex flex-col gap-[3.81rem]">
+          <div
+            class="flex flex-col gap-2 relative after:absolute after:w-[18.875rem] after:h-[0.0625rem] after:bg-[#5E607A] after:left-0 after:right-0 after:-bottom-[1.81rem]"
+          >
+            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p
+              class="text-[#C5C6CE] text-[0.9375rem] font-normal leading-relaxed"
+            >
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-2 relative after:absolute after:w-[18.875rem] after:h-[0.0625rem] after:bg-[#5E607A] after:left-0 after:right-0 after:-bottom-[1.81rem]"
+          >
+            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+              The Downsides of AI Artistry
+            </h3>
+            <p
+              class="text-[#C5C6CE] text-[0.9375rem] font-normal leading-relaxed"
+            >
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+              Is VC Funding Drying Up?
+            </h3>
+            <p
+              class="text-[#C5C6CE] text-[0.9375rem] font-normal leading-relaxed"
+            >
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style></style>
