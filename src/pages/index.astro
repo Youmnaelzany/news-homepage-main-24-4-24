@@ -6,16 +6,16 @@ import "@/styles/globals.css";
 
 <Layout title="Frontend Mentor | News homepage">
   <Header />
-  <main class="mx-4 mb-[4.69rem] xl:mx-[10.31rem] xl:mb-[7.75rem]">
+  <main class="mx-4 mb-[4.69rem] xl:mb-[7.75rem] xl:mx-[10.31rem]">
     <section class="flex flex-col gap-16 xl:flex-row xl:gap-[1.87rem]">
       <div class="xl:w-[45.625rem]">
         <picture>
           <source
             media="(min-width:768px )"
-            srcset="/public/images/image-web-3-desktop.jpg"
+            srcset="/images/image-web-3-desktop.jpg"
           />
           <img
-            src="/public/images/image-web-3-mobile.jpg"
+            src="/images/image-web-3-mobile.jpg"
             alt="image-web-3"
             class=""
           />
@@ -58,7 +58,9 @@ import "@/styles/globals.css";
           <div
             class="flex flex-col gap-2 relative after:absolute after:w-[18.875rem] after:h-[0.0625rem] after:bg-[#5E607A] after:left-0 after:right-0 after:-bottom-[1.81rem]"
           >
-            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+            <h3
+              class="text-xl leading-6 font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] transition-colors duration-500 ease-linear"
+            >
               Hydrogen VS Electric Cars
             </h3>
             <p
@@ -70,7 +72,9 @@ import "@/styles/globals.css";
           <div
             class="flex flex-col gap-2 relative after:absolute after:w-[18.875rem] after:h-[0.0625rem] after:bg-[#5E607A] after:left-0 after:right-0 after:-bottom-[1.81rem]"
           >
-            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+            <h3
+              class="text-xl leading-6 font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] transition-colors duration-500 ease-linear"
+            >
               The Downsides of AI Artistry
             </h3>
             <p
@@ -81,7 +85,9 @@ import "@/styles/globals.css";
             </p>
           </div>
           <div class="flex flex-col gap-2">
-            <h3 class="text-xl leading-6 font-extrabold text-[#FFFDFA]">
+            <h3
+              class="text-xl leading-6 font-extrabold text-[#FFFDFA] hover:text-[#E9AA52] transition-colors duration-500 ease-linear"
+            >
               Is VC Funding Drying Up?
             </h3>
             <p
@@ -91,6 +97,85 @@ import "@/styles/globals.css";
               what that means.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="mt-20 mb-[4.69rem] xl:mt-[4.5rem] xl:mb-[7.75rem] flex flex-col gap-8 xl:flex-row xl:justify-center xl:items-center"
+    >
+      <!-- Retro PCs -->
+      <div class="flex gap-8">
+        <div class="">
+          <img
+            src="/images/image-retro-pcs.jpg"
+            alt=""
+            class="w-[11.90625rem] h-[7.9375rem]"
+          />
+        </div>
+        <div class="flex flex-col">
+          <h3 class="text-[#C5C6CE] text-[2rem] font-bold leading-8 mb-3">
+            01
+          </h3>
+          <h4
+            class="text-[#00001A] text-lg leading-6 font-extrabold mb-[0.56rem] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >
+            Reviving Retro PCs
+          </h4>
+          <p
+            class="text-[0.9375rem] text-[#5E607A] font-normal leading-relaxed"
+          >
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <!-- Top 10 Laptops  -->
+      <div class="flex gap-8">
+        <div class="">
+          <img
+            src="/images/image-top-laptops.jpg"
+            alt=""
+            class="xl:w-[11.90625rem] h-[7.9375rem] w-[10rem]"
+          />
+        </div>
+        <div class="flex flex-col">
+          <h3 class="text-[#C5C6CE] text-[2rem] font-bold leading-8 mb-3">
+            02
+          </h3>
+          <h4
+            class="text-[#00001A] text-lg leading-6 font-extrabold mb-[0.56rem] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >
+            Top 10 Laptops
+          </h4>
+          <p
+            class="text-[0.9375rem] text-[#5E607A] font-normal leading-relaxed"
+          >
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <!-- Growth of Gaming -->
+      <div class="flex gap-8">
+        <div class="">
+          <img
+            src="/images/image-gaming-growth.jpg"
+            alt=""
+            class="w-[11.90625rem] h-[7.9375rem]"
+          />
+        </div>
+        <div class="flex flex-col">
+          <h3 class="text-[#C5C6CE] text-[2rem] font-bold leading-8 mb-3">
+            03
+          </h3>
+          <h4
+            class="text-[#00001A] text-lg leading-6 font-extrabold mb-[0.56rem] hover:text-[#F15D51] transition-colors ease-linear duration-500"
+          >
+            The Growth of Gaming
+          </h4>
+          <p
+            class="text-[0.9375rem] text-[#5E607A] font-normal leading-relaxed"
+          >
+            How the pandemic has sparked fresh opportunities.
+          </p>
         </div>
       </div>
     </section>
